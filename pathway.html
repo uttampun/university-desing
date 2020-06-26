@@ -1,0 +1,770 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<!--CSS Style-->
+<style type="text/css">
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url("tution.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow-x: hidden;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 140px;
+}
+.logo{
+    position: relative;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.logo label{
+    font: bolder;
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+}
+.logo label a{
+    text-decoration: none;
+    color: red;
+    text-shadow: 3px 3px black;
+}
+.secondlogo{
+    position: relative;
+    top: 45%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+.secondlogo label{
+    font: bolder;
+    font-size: 20px;
+    font-family: cursive;
+}
+.secondlogo label a{
+    text-decoration: none;
+    color: white;
+}
+.first{
+    position: relative;
+    top: 25%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+}
+.first label{
+       padding: 8px;
+       font: bolder;
+       font-size: 20px; 
+}
+.first label a{
+    text-decoration: none;
+    color: white;
+}
+.enter{
+    position: relative;
+    top: -40%;
+    left: 120%;
+    transform: translate(-50%, -50%);
+}
+.enter input{
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+}
+.search{
+    position: relative;
+    top: -73%;
+    left: 134%;
+    transform: translate(-50%, -50%);
+}
+.search i{
+    font-size: 30px;
+    color: black;
+}
+.search i a{
+    text-decoration: none;
+}
+.butto{
+    position: relative;
+    top: -97%;
+    left: 138%;
+    transform: translate(-50%, -50%);
+}
+.butto button{
+    width: 135px;
+    height: 50px;
+    border-color: black;
+    border-style: inset;
+}
+button:hover{
+   background-color: blueviolet;
+}
+.third{
+    position: relative;
+    top: -125%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+.third label{
+    font: bolder;
+    font-size: 25px;
+    padding: 10px;
+}
+.third label a{
+    text-decoration: none;
+    color: white;
+}
+.names{
+    position: relative;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+.names h1{
+    font: bolder;
+    font-size: 50px;
+    font-family: cursive;
+    color: rebeccapurple;
+    text-shadow: 2px 2px seagreen;
+}
+.names h2{
+    font: bolder;
+    font-size: 40px;
+    font-family: cursive;
+    color: rebeccapurple;
+    text-shadow: 2px 2px seagreen;
+}
+.names h3{
+    font: bolder;
+    font-size: 30px;
+    font-family: cursive;
+    color: rebeccapurple;
+    text-shadow: 2px 2px seagreen;
+}
+.wallpaper{
+    position: relative;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1200px;
+    background-color: white;
+    width: 1350px;
+    border-style: groove;
+}
+.secondmain{
+    position: relative;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.secondmain h4{
+    font: italic;
+    font-size: 30px;
+    font-family: cursive;
+}
+.find{
+    position: relative;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.find h5{
+    text-decoration: none;
+    font-size: 20px;
+}
+.find h5 a{
+    text-decoration: none;
+    color: blue;
+}
+.students{
+    position: relative;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    background-image: url("hm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1px black;
+    border-style: inset;
+}
+.students label{
+    background-color: steelblue;
+    width: 20px;
+}
+.financial{
+    background-color: skyblue;
+    width: 164px;
+    height: 60px;
+    position: relative;
+    top: 16%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+}
+.financial label{
+    color: white;
+    font-size: 20px;
+font: bolder;
+font-family: cursive;
+padding: 10px;
+text-align: center;
+}
+.financial label a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.mba{
+    position: relative;
+    top: 8%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 400px;
+    background-image: url("medical.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1px black;
+    border-style: inset;
+}
+.mb{background-color: skyblue;
+    width: 164px;
+    height: 70px;
+    position: relative;
+    top: -6%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+}
+.mb label{
+    color: white;
+    font-size: 20px;
+font: bolder;
+font-family: cursive;
+padding: 10px;
+text-align: center;
+}
+.mb label a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+hr{
+    height: 2px;
+}
+.cap{
+  position: relative;
+  padding: 35px;
+}
+.cap i{
+    font-size: 25px;
+}
+.cap i a{
+    color: black;
+}
+.diploma{
+    position: relative;
+    top: 5%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 100px;
+}
+.diploma a img{
+    width: 280px;
+    height: 300px;
+    
+}
+.graduateinfo{
+    background-color: silver;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 50px;
+}
+.graduateinfo label{
+    font: bolder;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+.graduateinfo label a{
+    text-decoration: none;
+    color: red;
+}
+.bachelor{
+    position: relative;
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 100px;
+}
+.bachelor a img{
+    width: 280px;
+    height: 300px;
+}
+.bach{
+    background-color: silver;
+    position: relative;
+    top: 11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 50px;
+}
+.bach label{
+    font: bolder;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.bach label a{
+    text-decoration: none;
+    color: red;
+}
+.master{
+    position: relative;
+    top: -15%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 100px;
+}
+.master a img{
+    width: 280px;
+    height: 300px;
+}
+.mas{
+    background-color: silver;
+    position: relative;
+    top: -1%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 50px;
+}
+.mas label{
+    font: bolder;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.mas label a{
+    text-decoration: none;
+    color: red;
+}
+.ques{
+    background-color: royalblue;
+    position: relative;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1350px;
+    height: 200px;
+}
+.details{
+    text-align: center;
+    padding: 40px;
+}
+.details p{
+ font: bolder;
+ font-size: 30px;
+ color: white;
+ font-family: cursive;
+}
+.last{
+     position: relative;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 1350px;
+     height: 500px;
+     background-color: silver;
+}
+.support{
+    float: left;
+    position: relative;
+    top: 6%;
+    left: 10%;
+    transform: translate(-50, -50%);
+}
+.support a {
+    text-decoration: none;
+    color: black;
+}
+.support a h1{
+    font: italic;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.firstli{
+    float: left;
+    position: relative;
+    top: 31%;
+    left: -1%;
+    transform: translate(-50%, -50%);
+}
+.op li{
+    list-style: none;
+}
+.op li a{
+    text-decoration: none;
+    font: bolder;
+    font-size: 25px;
+    color: white;
+}
+.enrollment{
+    position: relative;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.enrollment h2{
+    font: bolder;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.enrollment h2 a{
+    text-decoration: none;
+    color: black;
+}
+.secondli{
+    position: relative;
+    top: 22%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+.enroll li{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.enroll li a{
+    text-decoration: none;
+    color: white;
+}
+.campus{
+    position: relative;
+    top: -20%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+}
+.campus h3{
+    font: bolder;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.campus h3 a{
+    text-decoration: white;
+    color: black;
+}
+.thirdli{
+    position: relative;
+    top: -8%;
+    left: 131%;
+    transform: translate(-50%, -50%);
+}
+.our li{
+    list-style: none;
+    font: bolder;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.our li a{
+    text-decoration: none;
+    color: white;
+}
+.about{
+    float: left;
+    position: relative;
+    top: 10%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+.about h4{
+    font: bolder;
+    font-size: 30px;
+}
+.about h4 a{
+    text-decoration: none;
+    color: black;
+}
+.fourli{
+    position: relative;
+    top: 20%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+.abt li {
+    list-style: none;
+    font: bolder;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.abt li a{
+    text-decoration: none;
+    color: white;
+}
+.fb{
+    position: relative;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+.fb a i{
+  font-size: 80px;
+  color: blueviolet;
+}
+.inst{
+    position: relative;
+    top: -6%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+.inst a i{
+  font-size: 80px;
+  color: purple;
+}
+.twit{
+    position: relative;
+    top: -22%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+.twit a i{
+  font-size: 80px;
+  color: skyblue;
+}
+.you{
+    position: relative;
+    top: -38%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+}
+.you a i{
+  font-size: 80px;
+  color: red;
+}
+.copyright{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.privacy h2{
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, 50%);
+    font: bolder;
+    font-size: 20px;
+    color: black;
+    word-spacing: 5px;
+}
+#site{
+    float: right;
+    position: relative;
+    top: 0%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+    font: bolder;
+    font-size: 20px;
+    font-family: cursive;
+}
+#lastline{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1350px;
+    height: 1px;
+    border-radius: 2px;
+    border-color: cyan;
+}
+</style>
+<!--HTML BODY-->
+<body>
+    <!-- navigational bar -->
+    <nav>
+        <div class="logo">
+            <label><a href="#">Pathway University</a></label>
+        </div>
+        <div class="secondlogo">
+            <label><a href="">The Next Steps</a></label>
+        </div>
+        <div class="first">
+            <label><a href="#">Study Programmes</a></label>
+            <label><a href="#">Enrollment Information</a></label>
+            <label><a href="#">Current Student</a></label>
+            <label><a href="#">International Students</a></label>
+            <label><a href="#">Contact Us</a></label>
+        </div>
+        <div class="enter">
+            <input type="text" name="" placeholder="Search..">
+        </div>
+        <div class="search">
+        <a href="#"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="butto">
+            <button id="hov">Apply Now</button>
+        </div>
+        <div class="third">
+            <label><a href="#">News</a></label>
+            <label><a href="">Events</a></label>
+            <label><a href="">Contact</a></label>
+            <label><a href="">Library</a></label>
+        </div>
+    </nav>
+    <!-- Main Page-->
+    <div class="names">
+        <h1>Skils to set</h1>
+        <h2>You Up</h2>
+        <h3>for Life</h3>
+     </div>
+     <!--division covid page and wallpaper-->
+    <div class="wallpaper">
+    <div class="secondmain">
+ <h4>Covid-19 information & Update</h4>
+    </div>
+    <div class="find">
+        <h5><a href="#">Find Out More -></a></h5>
+    </div>
+    <div class="students">
+    </div>
+    <div class="financial">
+     <label><a href="#">Student Financial Help</a></label>
+    </div>
+    <div class="mba">
+    </div>
+    <div class="mb">
+        <label><a href="#">Study With us</a></label>
+    </div>
+    <hr>
+    <div class="cap">
+        <i class="fa fa-graduation-cap"><u><a href="#">Featured Course</a></u></i>
+    </div>
+    <div class="Diploma">
+  <a href="#"><img src="civil.jpg"></a>
+    <div class="graduateinfo">
+        <label><a href="#">GRADUATE DIPLOMA</a></label>
+    </div>
+    </div>
+    <div class="bachelor">
+      <a href="#"><img src="mba.jpg"></a>
+    </div>
+     <div class="bach">
+    <label><a href="#">BACHELOR</a></label>
+     </div>
+     <div class="master">
+         <a href="#"><img src="graduation.jpg"></a>
+     </div>
+      <div class="mas">
+          <label><a href="#">MASTER</a></label>
+      </div>
+    </div>
+    <!--blue color page-->
+    <div class="ques">
+        <div class="details">
+            <p>Got a Question or feedback?</p>
+            <br>
+            <p>Call us on 0800 935 or Send us a message</p>
+        </div>
+    </div>
+    <!--silver color information page-->
+    <div class="last">
+        <div class="support">
+       <h1><a href="#">STUDENT SUPPORT</a></h1>
+        </div>
+        <div class="firstli">
+            <ul class="op">
+                <li><a href="#">Learning Support</a></li>
+                <li><a href="#">Student Resources</a></li>
+                <li><a href="#">Support Services</a></li>
+                <li><a href="#">Student Success</a></li>
+                <li><a href="#">Free Bus</a></li>
+            </ul>
+        </div>
+        <div class="enrollment">
+            <h2><a href="#">ENROLLMENT INFORMATION</a></h2>
+             </div>
+        <div class="secondli">
+        <ul class="enroll">
+            <li><a href="#">Domestic Enrollments</a></li>
+                <li><a href="#">International Enrollments</a></li>
+                <li><a href="#">Funding your Study</a></li>
+                <li><a href="#">Orientation</a></li>
+                <li><a href="#">Secondary School Partnership</a></li>
+        </ul>
+        </div>
+        <div class="campus">
+            <h3><a href="#">OUR CAMPUSES</a></h3>
+        </div>
+        <div class="thirdli">
+            <ul class="our">
+                <li><a href="#">Engineering Campus</a></li>
+                    <li><a href="#">Hospitality Campus</a></li>
+                    <li><a href="#">Engineering Campus</a></li>
+                    <li><a href="#">Mangament Campus</a></li>
+                    <li><a href="#">Medical Campus</a></li>
+            </ul>
+            </div>
+            <div class="about">
+                <h4><a href="#">ABOUT US</a></h4>
+            </div>
+            <div class="fourli">
+                <ul class="abt">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Campuses</a></li>
+                </ul>
+    </div>
+    <!--social media icon-->
+    <div class="fb">
+        <a href="#">
+           <i class="fa fa-facebook"></i>
+        </a>
+        </div>
+        <div class="inst">
+            <a href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+           </div>
+           <div class="twit">
+           <a href="#">
+            <i class="fa fa-twitter"></i>
+        </a>
+       </div>
+       <div class="you">
+        <a href="#">
+            <i class="fa fa-youtube"></i>
+        </a>
+       </div>
+       <div class="Copyright">
+           <div class="privacy">
+            <h2 id="privacy">Privacy Statement  Disclaimer</h2>
+           </div>
+           <label id="site">Site by SilverStripe</label>
+           <hr id="lastline">
+       </div>
+</body>
+</html>
